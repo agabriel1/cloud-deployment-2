@@ -35,12 +35,6 @@ node.disk_image = "urn:publicid:IDN+emulab.net+image+emulab-ops:CENTOS7-64-STD"
 # Specify the component id and the IPv4 address
 iface4.component_id = "eth4"
 iface4.addAddress(rspec.IPv4Address("192.168.1.4", "255.255.255.0"))
- 
-# Add a raw PC to the request.
-node = request.RawPC("node-1")
-node = request.RawPC("node-2")
-node = request.RawPC("node-3")
-node = request.RawPC("node-4")
 
 # Install and execute scripts on the node. THIS TAR FILE DOES NOT ACTUALLY EXIST!
 node.addService(rspec.Install(url="http://example.org/sample.tar.gz", path="/local"))
