@@ -27,7 +27,7 @@ node3.disk_image = "urn:publicid:IDN+emulab.net+image+emulab-ops:CENTOS7-64-STD"
  # Specify the component id and the IPv4 address
 iface3.component_id = "eth3"
 iface3.addAddress(rspec.IPv4Address("192.168.1.3", "255.255.255.0"))
- node4 = request.XenVM("node-4")
+ node4 = request.XenVM("node4")
 iface4 = node4.addInterface("if4")
 node4.disk_image = "urn:publicid:IDN+emulab.net+image+emulab-ops:CENTOS7-64-STD"
  # Specify the component id and the IPv4 address
